@@ -17,3 +17,5 @@
 /Users/aleynameydan/Desktop/UpSchool-FullStack-Development-Bootcamp/UpStorage/src/Infrastructure/obj/Debug/net7.0/Infrastructure.pdb
 /Users/aleynameydan/Desktop/UpSchool-FullStack-Development-Bootcamp/UpStorage/src/Infrastructure/obj/Debug/net7.0/Infrastructure.genruntimeconfig.cache
 /Users/aleynameydan/Desktop/UpSchool-FullStack-Development-Bootcamp/UpStorage/src/Infrastructure/obj/Debug/net7.0/ref/Infrastructure.dll
+/Users/aleynameydan/Desktop/UpSchool-FullStack-Development-Bootcamp/UpStorage/src/Infrastructure/bin/Debug/net7.0/tr-TR/Application.resources.dll
+/Users/aleynameydan/Desktop/UpSchool-FullStack-Development-Bootcamp/UpStorage/src/Infrastructure/bin/Debug/net7.0/en-GB/Application.resources.dll

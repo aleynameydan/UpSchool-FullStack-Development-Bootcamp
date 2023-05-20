@@ -14,14 +14,16 @@ namespace Infrastructure;
 public static class ConfigureServices
 {
     public static IServiceCollection AddInfrastructure(this IServiceCollection services,
-        IConfiguration configuration)
+        IConfiguration configuration, string wwwrootPath)
     {
 
         var connectionString = configuration.GetConnectionString("MariaDB")!;
 
         // DbContext
+        //alet çantamıza applicationdbcontext kaydediliyor
         services.AddDbContext<ApplicationDbContext>(opt => opt.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
+        //biri iapplicationdbcontexti isterse alet çantasının içinden applicationdbcontext getir
         services.AddScoped<IApplicationDbContext>(provider => provider.GetRequiredService<ApplicationDbContext>());
 
         services.AddDbContext<IdentityContext>(opt =>
@@ -44,7 +46,14 @@ public static class ConfigureServices
             .AddDefaultTokenProviders();
         
         //Scoped Services
+        //ihtiyaç oldukça hep aynı şeyi kullanır
         services.AddScoped<IExcelService, ExcelManager>();
+        services.AddScoped<IAuthenticationService, AuthenticationManager>();
+        services.AddSingleton<IJwtService, JwtManager>();
+        
+        //Singleton Services
+        services.AddSingleton<ITwoFactorService, TwoFactorManager>();
+        services.AddSingleton<IEmailService>(new EmailManager(wwwrootPath));
         return services;
     }
 }

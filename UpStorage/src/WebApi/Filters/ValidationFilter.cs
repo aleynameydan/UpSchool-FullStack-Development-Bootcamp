@@ -6,6 +6,8 @@ namespace WebApi.Filters;
 public class ValidationFilter : ActionFilterAttribute
 {
     
+    // action çalıştırılırken filtreden geçer.
+    // context işlemi kullandığımız yeri temsil eder. --> add işlemi olabilir, getall olabilir her türlü işleme özel kullanılır
     public override Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
     {
         if (!context.ModelState.IsValid)

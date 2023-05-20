@@ -37,9 +37,9 @@ public class ApplicationDbContext : DbContext, IApplicationDbContext
         Notes = notes;
     }
 
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> optionsBuilderOptions)
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
     {
-        throw new NotImplementedException();
+        
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

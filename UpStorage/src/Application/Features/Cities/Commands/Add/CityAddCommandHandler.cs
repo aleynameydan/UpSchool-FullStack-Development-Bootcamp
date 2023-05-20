@@ -1,31 +1,26 @@
 using Application.Common.Interfaces;
+using Application.Common.Localizations;
 using Application.Features.City.Commands.Add;
 using Domain.Common;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Localization;
 
 namespace Application.Features.Cities.Commands.Add;
 
 public class CityAddCommandHandler:IRequestHandler<CityAddCommand,Response<int>>
 {
     private readonly IApplicationDbContext _applicationDbContext;
+    private readonly IStringLocalizer<CommonLocalizationKeys> _localizer;
 
-    public CityAddCommandHandler(IApplicationDbContext applicationDbContext)
+    public CityAddCommandHandler(IApplicationDbContext applicationDbContext, IStringLocalizer<CommonLocalizationKeys> localizer)
     {
         _applicationDbContext = applicationDbContext;
+        _localizer = localizer;
     }
 
     public async Task<Response<int>> Handle(CityAddCommand request, CancellationToken cancellationToken)
     {
-        if (!await _applicationDbContext.Countries.AnyAsync(x=>x.Id ==request.CountryId, cancellationToken))
-        {
-            throw new ArgumentNullException(nameof(request.CountryId));
-        }
-        
-        if (await _applicationDbContext.Cities.AnyAsync(x=>x.Name.ToLower() == request.Name.ToLower(), cancellationToken))
-        {
-            throw new ArgumentNullException(nameof(request.Name));
-        }
         var city = new Domain.Entities.City()
         {
             Name = request.Name,
@@ -40,6 +35,6 @@ public class CityAddCommandHandler:IRequestHandler<CityAddCommand,Response<int>>
         await _applicationDbContext.Cities.AddAsync(city, cancellationToken);
         await _applicationDbContext.SaveChangesAsync(cancellationToken);
 
-        return new Response<int>($"The new city named {city.Name} was added successfully", city.Id);
+        return new Response<int>(_localizer[CommonLocalizationKeys.City.Added,city.Name], city.Id);
     }
 }

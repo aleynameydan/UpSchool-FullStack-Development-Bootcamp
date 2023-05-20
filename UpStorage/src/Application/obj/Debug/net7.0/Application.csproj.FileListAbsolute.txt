@@ -13,3 +13,12 @@
 /Users/aleynameydan/Desktop/UpSchool-FullStack-Development-Bootcamp/UpStorage/src/Application/obj/Debug/net7.0/refint/Application.dll
 /Users/aleynameydan/Desktop/UpSchool-FullStack-Development-Bootcamp/UpStorage/src/Application/obj/Debug/net7.0/Application.pdb
 /Users/aleynameydan/Desktop/UpSchool-FullStack-Development-Bootcamp/UpStorage/src/Application/obj/Debug/net7.0/ref/Application.dll
+/Users/aleynameydan/Desktop/UpSchool-FullStack-Development-Bootcamp/UpStorage/src/Application/bin/Debug/net7.0/en-GB/Application.resources.dll
+/Users/aleynameydan/Desktop/UpSchool-FullStack-Development-Bootcamp/UpStorage/src/Application/bin/Debug/net7.0/tr-TR/Application.resources.dll
+/Users/aleynameydan/Desktop/UpSchool-FullStack-Development-Bootcamp/UpStorage/src/Application/obj/Debug/net7.0/Application.Resources.Common.Localizations.CommonLocalizations.en-GB.resources
+/Users/aleynameydan/Desktop/UpSchool-FullStack-Development-Bootcamp/UpStorage/src/Application/obj/Debug/net7.0/Application.Resources.Common.Localizations.CommonLocalizations.tr-TR.resources
+/Users/aleynameydan/Desktop/UpSchool-FullStack-Development-Bootcamp/UpStorage/src/Application/obj/Debug/net7.0/Application.csproj.GenerateResource.cache
+/Users/aleynameydan/Desktop/UpSchool-FullStack-Development-Bootcamp/UpStorage/src/Application/obj/Debug/net7.0/en-GB/Application.resources.cs
+/Users/aleynameydan/Desktop/UpSchool-FullStack-Development-Bootcamp/UpStorage/src/Application/obj/Debug/net7.0/en-GB/Application.resources.dll
+/Users/aleynameydan/Desktop/UpSchool-FullStack-Development-Bootcamp/UpStorage/src/Application/obj/Debug/net7.0/tr-TR/Application.resources.cs
+/Users/aleynameydan/Desktop/UpSchool-FullStack-Development-Bootcamp/UpStorage/src/Application/obj/Debug/net7.0/tr-TR/Application.resources.dll

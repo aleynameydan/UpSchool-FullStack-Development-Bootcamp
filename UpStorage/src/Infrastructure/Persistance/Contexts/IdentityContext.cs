@@ -17,7 +17,7 @@ public class IdentityContext:IdentityDbContext<User,Role,string,UserClaim,UserRo
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         //Configurations
-        //burası ne yapıyor araştır???
+        //IdentityContext içerisindeki classları tarıyor ve configurationsları ekliyor
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         
         //Ignores

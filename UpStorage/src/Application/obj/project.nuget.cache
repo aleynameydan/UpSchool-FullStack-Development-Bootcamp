@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "EMk+zskI82KoOy87O/ReUCB77YTbvceT8mW6La1JpJOh3GNfbCjQ8I1c8cSd9iY7iszeDk8yTFf+TajHjNH0OQ==",
+  "dgSpecHash": "hjLxReue6gV+Uq8JFuUHItfXALcz4Z/vxQFajOBsb0Pf3842hrFonFyV6MKt7IiX8Kpq5u4nr5d6Eg0Q3TTnoQ==",
   "success": true,
   "projectFilePath": "/Users/aleynameydan/Desktop/UpSchool-FullStack-Development-Bootcamp/UpStorage/src/Application/Application.csproj",
   "expectedPackageFiles": [
+    "/Users/aleynameydan/.nuget/packages/fluentvalidation/11.5.2/fluentvalidation.11.5.2.nupkg.sha512",
+    "/Users/aleynameydan/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.5.2/fluentvalidation.dependencyinjectionextensions.11.5.2.nupkg.sha512",
     "/Users/aleynameydan/.nuget/packages/mediatr/12.0.1/mediatr.12.0.1.nupkg.sha512",
     "/Users/aleynameydan/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
     "/Users/aleynameydan/.nuget/packages/microsoft.aspnetcore.cryptography.internal/7.0.4/microsoft.aspnetcore.cryptography.internal.7.0.4.nupkg.sha512",
@@ -17,6 +19,8 @@
     "/Users/aleynameydan/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "/Users/aleynameydan/.nuget/packages/microsoft.extensions.identity.core/7.0.4/microsoft.extensions.identity.core.7.0.4.nupkg.sha512",
     "/Users/aleynameydan/.nuget/packages/microsoft.extensions.identity.stores/7.0.4/microsoft.extensions.identity.stores.7.0.4.nupkg.sha512",
+    "/Users/aleynameydan/.nuget/packages/microsoft.extensions.localization/7.0.5/microsoft.extensions.localization.7.0.5.nupkg.sha512",
+    "/Users/aleynameydan/.nuget/packages/microsoft.extensions.localization.abstractions/7.0.5/microsoft.extensions.localization.abstractions.7.0.5.nupkg.sha512",
     "/Users/aleynameydan/.nuget/packages/microsoft.extensions.logging/7.0.0/microsoft.extensions.logging.7.0.0.nupkg.sha512",
     "/Users/aleynameydan/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
     "/Users/aleynameydan/.nuget/packages/microsoft.extensions.options/7.0.1/microsoft.extensions.options.7.0.1.nupkg.sha512",

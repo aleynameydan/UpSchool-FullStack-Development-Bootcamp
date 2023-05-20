@@ -9,10 +9,41 @@
       "Application/1.0.0": {
         "dependencies": {
           "Domain": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "7.0.4"
+          "FluentValidation": "11.5.2",
+          "FluentValidation.DependencyInjectionExtensions": "11.5.2",
+          "Microsoft.EntityFrameworkCore": "7.0.4",
+          "Microsoft.Extensions.Localization": "7.0.5"
         },
         "runtime": {
           "Application.dll": {}
+        },
+        "resources": {
+          "en-GB/Application.resources.dll": {
+            "locale": "en-GB"
+          },
+          "tr-TR/Application.resources.dll": {
+            "locale": "tr-TR"
+          }
+        }
+      },
+      "FluentValidation/11.5.2": {
+        "runtime": {
+          "lib/net7.0/FluentValidation.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.5.2.0"
+          }
+        }
+      },
+      "FluentValidation.DependencyInjectionExtensions/11.5.2": {
+        "dependencies": {
+          "FluentValidation": "11.5.2",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.5.2.0"
+          }
         }
       },
       "MediatR/12.0.1": {
@@ -149,6 +180,28 @@
           }
         }
       },
+      "Microsoft.Extensions.Localization/7.0.5": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Localization.Abstractions": "7.0.5",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.1"
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Localization.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.523.17410"
+          }
+        }
+      },
+      "Microsoft.Extensions.Localization.Abstractions/7.0.5": {
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Localization.Abstractions.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.523.17410"
+          }
+        }
+      },
       "Microsoft.Extensions.Logging/7.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
@@ -207,6 +260,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "FluentValidation/11.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kj/hW/iusp2zq1Vt1YPLgDj6UG0DhoJXGkLwjLwm3j7vUtRF8DVA5vHJfItG3BxDjLWJUR2pvw8fK7rnuysZNA==",
+      "path": "fluentvalidation/11.5.2",
+      "hashPath": "fluentvalidation.11.5.2.nupkg.sha512"
+    },
+    "FluentValidation.DependencyInjectionExtensions/11.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ycibtdWdluIx0aTgQvO7Kjd5GjNRpD92z4/hEJc8u1luZ5ff1k0JpwPGmL+YFbPVYFk+A6gYIrVI4QdZfSJJdQ==",
+      "path": "fluentvalidation.dependencyinjectionextensions/11.5.2",
+      "hashPath": "fluentvalidation.dependencyinjectionextensions.11.5.2.nupkg.sha512"
     },
     "MediatR/12.0.1": {
       "type": "package",
@@ -298,6 +365,20 @@
       "sha512": "sha512-+VXIcS+Nakyv/yiaILmAWyG7PmPxOZjhx5UZRFqG41ObV7xES+o5teZ1rXV1R6X4mASzliQs4OAPtbpgG6Estw==",
       "path": "microsoft.extensions.identity.stores/7.0.4",
       "hashPath": "microsoft.extensions.identity.stores.7.0.4.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Localization/7.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-F5aAQlf29mSTEl13OnJ3f3mBOyjYQ4P9RVC0lIVyhqP2pP7ZdjyWpaGrHjx1rR0g8IRaeM1I8fDYI0nnkanksA==",
+      "path": "microsoft.extensions.localization/7.0.5",
+      "hashPath": "microsoft.extensions.localization.7.0.5.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Localization.Abstractions/7.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9aKOv6iaYLhCLsLIYIZePKLQ8LYpnasoqjg5lv2RCOz+jkLp/A7YmtNrYfhhmNARX2sq8427KQOyvkFIf8uLaw==",
+      "path": "microsoft.extensions.localization.abstractions/7.0.5",
+      "hashPath": "microsoft.extensions.localization.abstractions.7.0.5.nupkg.sha512"
     },
     "Microsoft.Extensions.Logging/7.0.0": {
       "type": "package",

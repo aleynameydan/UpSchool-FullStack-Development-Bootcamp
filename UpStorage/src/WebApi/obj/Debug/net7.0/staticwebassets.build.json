@@ -1,11 +1,37 @@
 {
   "Version": 1,
-  "Hash": "lAVsf4/XP8OL4a3UKcpKodesbBfBaGYqErDYy8hI7Xs=",
+  "Hash": "wEsXL94MRJYp+g52chpCHor3winjTTJJ1zEn4PSfGyU=",
   "Source": "WebApi",
   "BasePath": "_content/WebApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApi/wwwroot",
+      "Source": "WebApi",
+      "ContentRoot": "/Users/aleynameydan/Desktop/UpSchool-FullStack-Development-Bootcamp/UpStorage/src/WebApi/wwwroot/",
+      "BasePath": "_content/WebApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/aleynameydan/Desktop/UpSchool-FullStack-Development-Bootcamp/UpStorage/src/WebApi/wwwroot/email_templates/email_confirmation.html",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aleynameydan/Desktop/UpSchool-FullStack-Development-Bootcamp/UpStorage/src/WebApi/wwwroot/",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "email_templates/email_confirmation.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/email_templates/email_confirmation.html"
+    }
+  ]
 }
